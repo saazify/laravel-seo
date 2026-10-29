@@ -1,0 +1,72 @@
+{
+    "name": "saazify/laravel-seo",
+    "description": "Saazify's all-in-one Laravel SEO package: meta tags, Open Graph, JSON-LD, XML sitemaps, Google News, video, local business, redirects, IndexNow, and content analysis.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "seo",
+        "sitemap",
+        "schema",
+        "opengraph",
+        "redirects",
+        "local-seo",
+        "news-sitemap",
+        "video-sitemap",
+        "saazify"
+    ],
+    "authors": [
+        {
+            "name": "Saazify"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-xmlwriter": "*",
+        "illuminate/console": "^11.0|^12.0|^13.0",
+        "illuminate/database": "^11.0|^12.0|^13.0",
+        "illuminate/http": "^11.0|^12.0|^13.0",
+        "illuminate/routing": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "illuminate/view": "^11.0|^12.0|^13.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.21",
+        "orchestra/testbench": "^9.15|^10.0|^11.0",
+        "phpunit/phpunit": "^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Saazify\\LaravelSeo\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Saazify\\LaravelSeo\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Saazify\\LaravelSeo\\SeoServiceProvider"
+            ],
+            "aliases": {
+                "Seo": "Saazify\\LaravelSeo\\Facades\\Seo"
+            }
+        }
+    },
+    "scripts": {
+        "format": "vendor/bin/pint",
+        "test": "vendor/bin/phpunit"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
