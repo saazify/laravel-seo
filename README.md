@@ -1,6 +1,13 @@
 # Saazify Laravel SEO
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/saazify/laravel-seo.svg?style=flat-square)](https://packagist.org/packages/saazify/laravel-seo)
+[![Total Downloads](https://img.shields.io/packagist/dt/saazify/laravel-seo.svg?style=flat-square)](https://packagist.org/packages/saazify/laravel-seo)
+[![PHP Version](https://img.shields.io/packagist/php-v/saazify/laravel-seo.svg?style=flat-square)](https://packagist.org/packages/saazify/laravel-seo)
+[![License](https://img.shields.io/packagist/l/saazify/laravel-seo.svg?style=flat-square)](https://github.com/saazify/laravel-seo/blob/main/LICENSE)
+
 `saazify/laravel-seo` is Saazify's Laravel package for on-site SEO. After you install it, one package covers schema, news, video, local business, and the extra tools that usually sit in a premium plugin: redirects, keyphrases, social tags, IndexNow, and content checks.
+
+This README is the package page on [Packagist](https://packagist.org/packages/saazify/laravel-seo) and on [GitHub](https://github.com/saazify/laravel-seo). The current release is [v1.1](https://github.com/saazify/laravel-seo/releases/tag/v1.1).
 
 This is original Laravel code. It is not a copy of any WordPress plugin.
 
@@ -371,23 +378,27 @@ composer install
 composer test
 ```
 
-## Publish on Packagist
+## Packagist
 
-The package name is `saazify/laravel-seo`. Keep the GitHub repository under the `saazify` organization.
+The Composer name is `saazify/laravel-seo`. Packagist reads this `README.md` and `composer.json` from the default branch of [github.com/saazify/laravel-seo](https://github.com/saazify/laravel-seo). The version comes from the git tag `v1.1`, which Packagist shows as `1.1.0`. There is no `version` field in `composer.json`.
+
+After `main` and `v1.1` are on GitHub:
+
+1. Sign in at [packagist.org](https://packagist.org) with the account that should own the package.
+2. Open [Submit](https://packagist.org/packages/submit) and enter `https://github.com/saazify/laravel-seo`.
+3. Confirm the package name is `saazify/laravel-seo` and that `1.1.0` is listed.
+4. In the package settings, enable the GitHub webhook so later tags publish on their own.
+
+Install the released version with:
 
 ```bash
-git init
-git add .
-git commit -m "Initial release of saazify/laravel-seo"
-git branch -M main
-git remote add origin git@github.com:saazify/laravel-seo.git
-git push -u origin main
-git tag v1.0.0
-git push origin v1.0.0
+composer require saazify/laravel-seo
 ```
 
-Sign in at [packagist.org](https://packagist.org) with the Saazify account, submit `https://github.com/saazify/laravel-seo`, and enable the GitHub webhook in the package settings.
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
-MIT.
+MIT. See [LICENSE](LICENSE).

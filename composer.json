@@ -15,9 +15,15 @@
         "video-sitemap",
         "saazify"
     ],
+    "homepage": "https://github.com/saazify/laravel-seo",
+    "support": {
+        "issues": "https://github.com/saazify/laravel-seo/issues",
+        "source": "https://github.com/saazify/laravel-seo"
+    },
     "authors": [
         {
-            "name": "Saazify"
+            "name": "Saazify",
+            "homepage": "https://github.com/saazify"
         }
     ],
     "require": {
